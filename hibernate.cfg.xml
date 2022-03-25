@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+<property name="hbm2ddl.auto">update</property>
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="connection.url">jdbc:mysql://localhost/mydb</property>
+<property name="connection.username">root</property>
+<property name="connection.password">25Feb1998@</property>
+<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+<mapping class=" JDBCmaven.onetomany.question" />
+<mapping class=" JDBCmaven.onetomany.Answer" />
+<mapping class=" JDBCmaven.onetomany.App" />
+</session-factory>
+</hibernate-configuration>
